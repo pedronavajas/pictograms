@@ -20,8 +20,8 @@
     }
 
         .fragment header[role=banner] .win-backbutton {
-            margin-left: 39px;
-            margin-top: 59px;
+            margin-left: 10px;
+            margin-top: 25px;
         }
 
         .fragment header[role=banner] .titlearea {
@@ -70,4 +70,29 @@
         .fragment header[role=banner] .win-backbutton {
             margin-left: 29px;
         }
+}
+
+div {
+    margin: 5px;
+    width:250px;
+    height:250px;
+}
+.div1 {
+    background-color:red;
+    text-align:center;
+    color:yellow;
+}
+
+.div2 {
+    background-color:yellow;
+    text-align:center;
+    vertical-align:middle;
+    color:red;
+    border-radius:15px;
+}
+
+span {
+    background-color: green;
+    width: 75px;
+    height: 75px;
 }
