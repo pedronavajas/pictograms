@@ -1,2 +1,101 @@
-﻿body {
+﻿.homepage section[role=main] {
+    margin-left: 120px;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .homepage section[role=main] {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: portrait) {
+    .homepage section[role=main] {
+        margin-left: 100px;
+    }
+}
+
+/*---ESTILOS NOSOLOSOFTWARE---*/
+nav {
+    float: right;
+    width:85%;
+    margin-bottom:2em;
+}
+
+aside {
+    width:13%;
+    margin-right:2%;
+    float: left;
+    height: 100%;
+}
+
+.img-list {
+    float: left;
+    display: block;
+    width: 85%;
+    margin: 0.3em 7.5%;
+}
+.divider {
+    border-top: solid 0.2em #ffffff;
+    width: 85%;
+    float: right;
+    margin:1.5em 0;
+}
+
+.picture {
+    width: 10%;
+}
+
+    .picture option {
+        margin-left: 5%;
+        display:block;
+        float:left;
+    }
+
+
+.app-exit {
+    float:right;
+}
+
+article span {
+    width:13.5%;
+    margin-right: 5%;
+    margin-bottom:5em;
+    float:left;
+    display:block;
+}
+
+article span img, article span div {
+    width: 100%;
+    margin:-0.3em 0;
+    border:solid 0.3em white;
+    background-color:white;
+}
+
+article span.red img, article span.red div {
+    border:solid 0.3em red;
+    background-color:red;
+}
+article span.blue img, article span.blue div {
+    border:solid 0.3em blue;
+    background-color:blue;
+}
+article span.green img, article span.green div {
+    border:solid 0.3em green;
+    background-color:green;
+}
+article span.orange img, article span.orange div {
+    border:solid 0.3em orange;
+    background-color:orange;
+}
+article span.pink img, article span.pink div {
+    border:solid 0.3em pink;
+    background-color:pink;
+}
+article span.purple img, article span.purple div {
+    border:solid 0.3em purple;
+    background-color:purple;
+}
+article span div {
+    text-align: center;
+    color:#000000;
 }

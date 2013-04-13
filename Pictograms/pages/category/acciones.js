@@ -1,27 +1,48 @@
 ﻿(function () {
     "use strict";
 
-    WinJS.UI.Pages.define("/pages/home/home.html", {
+    WinJS.UI.Pages.define("/pages/category/acciones.html", {
         // Se llama a esta función cuando un usuario navega a esta página.
         ready: function (element, options) {
-            // Asigna acciones a los botones de categoria
-            var button = document.getElementById("acciones");
-            button.addEventListener("click", this.goToCategory, false);
+            // Cambia el titulo segun la categoria
+            var categoryName = WinJS.Application.sessionState.categoryName;
+            var title = "Categoría: " + categoryName.charAt(0).toUpperCase() + categoryName.slice(1);
+            element.querySelector("header[role=banner] .pagetitle").textContent = title;
 
-            button = document.getElementById("comportamiento");
-            button.addEventListener("click", this.goToCategory, false);
+            // Asigna acciones a los botones de pictogramas
+            var button = document.getElementById("abrir");
+            button.addEventListener("click", this.addPictogram, false);
 
-            button = document.getElementById("emociones");
-            button.addEventListener("click", this.goToCategory, false);
+            button = document.getElementById("acariciar");
+            button.addEventListener("click", this.addPictogram, false);
 
-            button = document.getElementById("gustos");
-            button.addEventListener("click", this.goToCategory, false);
+            button = document.getElementById("acostarse");
+            button.addEventListener("click", this.addPictogram, false);
 
-            button = document.getElementById("lugares");
-            button.addEventListener("click", this.goToCategory, false);
+            button = document.getElementById("actividad");
+            button.addEventListener("click", this.addPictogram, false);
 
-            button = document.getElementById("personas");
-            button.addEventListener("click", this.goToCategory, false);
+            button = document.getElementById("afirmar");
+            button.addEventListener("click", this.addPictogram, false);
+
+            button = document.getElementById("andar");
+            button.addEventListener("click", this.addPictogram, false);
+
+            button = document.getElementById("aprender");
+            button.addEventListener("click", this.addPictogram, false);
+
+            button = document.getElementById("beber");
+            button.addEventListener("click", this.addPictogram, false);
+            /*
+            button = document.getElementById("comer");
+            button.addEventListener("click", this.addPictogram, false);
+
+            button = document.getElementById("dormir");
+            button.addEventListener("click", this.addPictogram, false);
+
+            button = document.getElementById("jugar");
+            button.addEventListener("click", this.addPictogram, false);
+            */
 
             // Asigna acciones a los botones de acceso rapido
             button = document.getElementById("quick-yes");
