@@ -13,63 +13,74 @@
         <link href="/css/default.css" rel="stylesheet" />
         <link href="/pages/home/home.css" rel="stylesheet" />
         <script src="/pages/home/home.js"></script>
-        <script src="/pages/home/dataExample.js"></script>
     </head>
-<body>   
-    <!-- Contenido que se cargará y mostrará. -->
-    <div class="fragment homepage">
-        <section aria-label="Main content" role="main">
-            <nav>
-                <img id="pict1" class="picture" data-win-bind="src: item1 " />
-                <img id="Img1" class="picture" data-win-bind="src: item2 " />
-                <img id="Img2" class="picture" data-win-bind="src: item3 " />
-                <img id="Img3" class="picture" data-win-bind="src: item4 " />
-                <img id="Img8" class="picture option" data-win-bind="src: item4 " />
-                <img id="Img9" class="picture" data-win-bind="src: item4 " />
+    <body>   
+        <!-- Contenido que se cargará y mostrará. -->
+        <div class="fragment homepage">
+            <header aria-label="Header content" role="banner">
+                <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+                <h1 class="titlearea win-type-ellipsis">
+                    <span class="pagetitle">Inicio</span>
+                </h1>
+            </header>
 
-            </nav>
-            <aside>
-                <img id="Img4" class="img-list" src="/images/exit.png" /> <br />
-                <img id="Img6" class="img-list" src="/images/exit.png" /> <br />
-                <img id="Img5" class="img-list" src="/images/exit.png" /> <br />
-                <img id="Img7" class="img-list app-exit" src="/images/exit.png" /> <br />
-            </aside>
-            <article>
-                <span class="red">
-                    <img src="../../images/pictograms/ok.png" />
-                    <div>ACCIONES</div>
-                </span>
-                <span class="blue">
-                    <img src="../../images/pictograms/ok.png" />
-                    <div>ACCIONES</div>
-                </span>
-                <span class="green">
-                    <img src="../../images/pictograms/ok.png" />
-                    <div>ACCIONES</div>
-                </span>
-                <span class="orange">
-                    <img src="../../images/pictograms/ok.png" />
-                    <div>ACCIONES</div>
-                </span>
-                <span class="purple">
-                    <img src="../../images/pictograms/ok.png" />
-                    <div>ACCIONES</div>
-                </span>
-                <span class="pink">
-                    <img src="../../images/pictograms/ok.png" />
-                    <div>ACCIONES</div>
-                </span>
-                <span class="">
-                    <img src="../../images/logo.png" />
-                    <div>CUSTOM</div>
-                </span>
-                <span class="pink">
-                    <img src="../../images/logo.png" />
-                    <div>CUSTOM</div>
-                </span>
+            <section aria-label="Main content" role="main">
+                <!-- SELECTED -->
+                <nav>
+                    <img id="selected1" class="picture" data-win-bind="src: item1" />
+                    <img id="selected2" class="picture" data-win-bind="src: item2" />
+                    <img id="selected3" class="picture" data-win-bind="src: item3" />
+                    <img id="selected4" class="picture" data-win-bind="src: item4" />
 
-            </article>
-        </section>
-    </div>
-</body>
+                    <!-- COMMANDS -->
+                    <img id="play" class="picture option" src="/images/exit.png" />
+                    <img id="delete" class="picture" src="/images/exit.png" />
+                </nav>
+
+                <!-- QUICK ACCESS -->
+                <aside>
+                    <img id="quick-yes" class="img-list" src="/images/pictograms/ok.png" /> <br />
+                    <img id="quick-no" class="img-list" src="/images/exit.png" /> <br />
+                    <img id="quick-want" class="img-list" src="/images/exit.png" /> <br />
+                    <img id="quick-no-want" class="img-list app-exit" src="/images/exit.png" /> <br />
+                </aside>
+
+                <!-- CATEGORIES -->
+                <article>
+                    <span class="red">
+                        <img id="acciones" src="../../images/pictograms/ok.png" />
+                        <div>ACCIONES</div>
+                    </span>
+                    <span class="blue">
+                        <img id="comportamiento" src="../../images/pictograms/ok.png" />
+                        <div>COMPORTAMIENTO</div>
+                    </span>
+                    <span class="green">
+                        <img id="emociones" src="../../images/pictograms/ok.png" />
+                        <div>EMOCIONES</div>
+                    </span>
+                    <span class="orange">
+                        <img id="gustos" src="../../images/pictograms/ok.png" />
+                        <div>GUSTOS</div>
+                    </span>
+                    <span class="purple">
+                        <img id="lugares" src="../../images/pictograms/ok.png" />
+                        <div>LUGARES</div>
+                    </span>
+                    <span class="pink">
+                        <img id="personas" src="../../images/pictograms/ok.png" />
+                        <div>PERSONAS</div>
+                    </span>
+                    <span class="pink">
+                        <img src="../../images/logo.png" />
+                        <div>CUSTOM</div>
+                    </span>
+                    <span class="pink">
+                        <img src="../../images/logo.png" />
+                        <div>CUSTOM</div>
+                    </span>
+                </article>
+            </section>
+        </div>
+    </body>
 </html>

@@ -5,7 +5,7 @@
         // Se llama a esta función cuando un usuario navega a esta página.
         ready: function (element, options) {
             // Asigna acciones a los botones de categoria
-            /*var button = document.getElementById("acciones");
+            var button = document.getElementById("acciones");
             button.addEventListener("click", this.goToCategory, false);
 
             button = document.getElementById("comportamiento");
@@ -34,9 +34,6 @@
             button.addEventListener("click", this.addPictogram, false);
             
             button = document.getElementById("quick-no-want");
-            button.addEventListener("click", this.addPictogram, false); */
-
-            var button = document.getElementById("quick-yes");
             button.addEventListener("click", this.addPictogram, false);
 
             // Binding
