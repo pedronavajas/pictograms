@@ -1,5 +1,19 @@
-﻿.homepage section[role=main] {
-    margin-left: 120px;
+﻿.picture {
+    width: 200px;
+    height: 200px;
+}
+
+.uno {
+    height: 40%;
+    background-color: red;
+}
+
+.dos {
+    background-color: red;
+}
+
+.homepage section[role=main] {
+    margin-left: 20px;
 }
 
 @media screen and (-ms-view-state: snapped) {
@@ -12,4 +26,31 @@
     .homepage section[role=main] {
         margin-left: 100px;
     }
+}
+
+nav {
+    float: right;
+    width: 90%;
+}
+
+aside {
+    width:7%;
+    margin-right:3%;
+    float: left;
+    height: 100%;
+    background-color:red;
+}
+
+.img-list {
+    float: left;
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+}
+
+.divider {
+    border-bottom: solid 2px #ffffff;
+    width: 90%;
+    float: left;
+    height:20px;
 }
