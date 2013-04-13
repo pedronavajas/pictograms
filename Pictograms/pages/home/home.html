@@ -13,28 +13,31 @@
         <link href="/css/default.css" rel="stylesheet" />
         <link href="/pages/home/home.css" rel="stylesheet" />
         <script src="/pages/home/home.js"></script>
+        <script src="/pages/home/dataExample.js"></script>
     </head>
-    <body>
-        <!-- Contenido que se cargará y mostrará. -->
-        <div class="fragment homepage">
-            <header aria-label="Header content" role="banner">
-                <h1 class="titlearea win-type-ellipsis">
-                    <span class="pagetitle">Picto</span>
-                </h1>
-            </header>
-
-            <section aria-label="Main content" role="main">
-                <div class="div1">
-                    div1
-                </div>
-                <div class="div2">
-                    div2
-                    <span>
-                        span1
-                    </span>
-                </div>
-                <p>Aquí se debe incluir el contenido.</p>
-            </section>
-        </div>
-    </body>
+<body>   
+    <!-- Contenido que se cargará y mostrará. -->
+    <div class="fragment homepage">
+        <section aria-label="Main content" role="main">
+            <nav>
+                <img id="pict1" class="picture" data-win-bind="src: item1 " />
+                <img id="Img1" class="picture" data-win-bind="src: item2 " />
+                <img id="Img2" class="picture" data-win-bind="src: item3 " />
+                <img id="Img3" class="picture" data-win-bind="src: item4 " />
+            </nav>
+            <aside>
+                <img id="Img4" class="img-list" src="/images/exit.png" /> <br />
+                <img id="Img6" class="img-list" src="/images/exit.png" /> <br />
+                <img id="Img5" class="img-list" src="/images/exit.png" /> <br />
+            </aside>
+            <article>
+                <p>
+                    <div class="divider"></div>
+                    <img id="exit" class="picture" src="/images/exit.png" />
+                    <img id="page2" src="/images/exit.png" />
+                </p>
+            </article>
+        </section>
+    </div>
+</body>
 </html>
