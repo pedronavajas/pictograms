@@ -5,36 +5,18 @@
         // Se llama a esta función cuando un usuario navega a esta página.
         ready: function (element, options) {
             // Asigna acciones a los botones de categoria
-            var button = document.getElementById("acciones");
-            button.addEventListener("click", this.goToCategory, false);
+            var categories = document.getElementsByClassName("category");
 
-            button = document.getElementById("comportamiento");
-            button.addEventListener("click", this.goToCategory, false);
+            var self = this;
+            Array.prototype.forEach.call(categories, function (category) {
+                category.addEventListener("click", self.goToCategory, false);
+            });
 
-            button = document.getElementById("emociones");
-            button.addEventListener("click", this.goToCategory, false);
+            var pictograms = document.getElementsByClassName("pictogram");
 
-            button = document.getElementById("gustos");
-            button.addEventListener("click", this.goToCategory, false);
-
-            button = document.getElementById("lugares");
-            button.addEventListener("click", this.goToCategory, false);
-
-            button = document.getElementById("personas");
-            button.addEventListener("click", this.goToCategory, false);
-
-            // Asigna acciones a los botones de acceso rapido
-            button = document.getElementById("quick-yes");
-            button.addEventListener("click", this.addPictogram, false);
-
-            button = document.getElementById("quick-no");
-            button.addEventListener("click", this.addPictogram, false);
-
-            button = document.getElementById("quick-want");
-            button.addEventListener("click", this.addPictogram, false);
-            
-            button = document.getElementById("quick-no-want");
-            button.addEventListener("click", this.addPictogram, false);
+            Array.prototype.forEach.call(pictograms, function (pictogram) {
+                pictogram.addEventListener("click", self.addPictogram, false);
+            });
 
             // Binding
             if (WinJS.Application.sessionState.selectedArray == null) {
@@ -50,21 +32,9 @@
         },
 
         addPictogram: function (eventInfo) {
-            if (WinJS.Application.sessionState.selectedIndex == 1) {
-                WinJS.Application.sessionState.selectedArray.item1 = eventInfo.target.src;
-                WinJS.Application.sessionState.selectedIndex++;
-            }
-            else if (WinJS.Application.sessionState.selectedIndex == 2) {
-                WinJS.Application.sessionState.selectedArray.item2 = eventInfo.target.src;
-                WinJS.Application.sessionState.selectedIndex++;
-            }
-            else if (WinJS.Application.sessionState.selectedIndex == 3) {
-                WinJS.Application.sessionState.selectedArray.item3 = eventInfo.target.src;
-                WinJS.Application.sessionState.selectedIndex++;
-            }
-            else {
-                WinJS.Application.sessionState.selectedArray.item4 = eventInfo.target.src;
-            }
+            var item = "item" + WinJS.Application.sessionState.selectedIndex;
+            WinJS.Application.sessionState.selectedArray[item] = eventInfo.target.src;
+            WinJS.Application.sessionState.selectedIndex++;
         },
 
         goToCategory: function (eventInfo) {
