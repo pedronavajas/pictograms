@@ -1,9 +1,47 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8" />
+        <title>Categoría</title>
+
+        <!-- Referencias de WinJS -->
+        <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+        <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+        <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+        <link href="/css/default.css" rel="stylesheet" />
+        <link href="/pages/category/category.css" rel="stylesheet" />
+        <script src="/pages/category/category.js"></script>
     </head>
-    <body>
-    </body>
+<body>   
+    <!-- Contenido que se cargará y mostrará. -->
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Categoría</span>
+            </h1>
+        </header>
+
+        <section aria-label="Main content" role="main">
+            <nav>
+                <img id="pict1" class="picture" src="#" data-win-bind="src: item1 " />
+                <img id="Img1" class="picture" src="#" data-win-bind="src: item2 " />
+                <img id="Img2" class="picture" src="#" data-win-bind="src: item3 " />
+                <img id="Img3" class="picture" src="#" data-win-bind="src: item4 " />
+            </nav>
+            <aside>
+                <img id="Img4" class="img-list" src="/images/exit.png" /> <br />
+                <img id="Img6" class="img-list" src="/images/exit.png" /> <br />
+                <img id="Img5" class="img-list" src="/images/exit.png" /> <br />
+            </aside>
+            <article>
+                <div class="divider"></div>
+                <img id="exit" class="picture" src="/images/exit.png" />
+                <img id="page2" src="/images/exit.png" />
+            </article>
+        </section>
+    </div>
+</body>
 </html>
