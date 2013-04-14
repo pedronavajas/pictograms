@@ -1,7 +1,7 @@
 ﻿(function () {
     "use strict";
 
-    WinJS.UI.Pages.define("/pages/category/acciones.html", {
+    WinJS.UI.Pages.define("/pages/category/gustos.html", {
         // Se llama a esta función cuando un usuario navega a esta página.
         ready: function (element, options) {
             // Cambia el nombre de la pagina

@@ -2,8 +2,8 @@
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
   <Identity Name="2e948f0d-f62e-4b97-8786-2b02c15b1033" Version="1.0.0.0" Publisher="CN=FranciscoLuis" />
   <Properties>
-    <DisplayName>Pictograms</DisplayName>
-    <PublisherDisplayName>FranciscoLuis</PublisherDisplayName>
+    <DisplayName>Picto</DisplayName>
+    <PublisherDisplayName>NoSoloSoftware Network</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="Pictograms" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Pictograms" ForegroundText="light" BackgroundColor="#464646">
+      <VisualElements DisplayName="Picto" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Pictograms" ForegroundText="light" BackgroundColor="#464646">
         <DefaultTile ShowName="allLogos" />
         <SplashScreen Image="images\splashscreen.png" />
         <InitialRotationPreference>
